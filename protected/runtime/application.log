@@ -1,0 +1,27 @@
+2016/03/10 18:51:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dist/img/user4-128x128.jpg".' in C:\wamp\www\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dist/img/user4-...')
+#1 C:\wamp\www\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\plateforme\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/plateforme/dist/img/user4-128x128.jpg
+HTTP_REFERER=http://localhost/plateforme/
+---
+2016/03/10 18:51:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dist/img/user3-128x128.jpg".' in C:\wamp\www\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dist/img/user3-...')
+#1 C:\wamp\www\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\plateforme\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/plateforme/dist/img/user3-128x128.jpg
+HTTP_REFERER=http://localhost/plateforme/
+---
+2016/03/10 18:51:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dist/img/user2-160x160.jpg".' in C:\wamp\www\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dist/img/user2-...')
+#1 C:\wamp\www\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\plateforme\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/plateforme/dist/img/user2-160x160.jpg
+HTTP_REFERER=http://localhost/plateforme/
+---
