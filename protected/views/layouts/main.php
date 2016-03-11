@@ -158,14 +158,7 @@
 
         <!-- Main content -->
         <section class="content">
-<div class="box box-info">
-                <div class="box-header">
-                 
-                  <!-- tools box -->
-                  <div class="pull-right box-tools">
-                    
-                </div>
-                <div class="box-body">
+
                   
                     
                     
@@ -174,9 +167,7 @@
 
 
 
-                </div>
-               
-              </div>
+                
 
       
 

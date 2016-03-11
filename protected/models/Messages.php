@@ -1,28 +1,24 @@
 <?php
 
 /**
- * This is the model class for table "user".
+ * This is the model class for table "messages".
  *
- * The followings are the available columns in table 'user':
+ * The followings are the available columns in table 'messages':
  * @property integer $id
- * @property string $UserName
- * @property string $PassWord
- * @property string $CreationDate
- * @property string $LastUpdate
- * @property string $FirstName
- * @property string $LastName
- * @property integer $id_role
+ * @property string $Content
+ * @property string $Subject
+ * @property string $sender
+ * @property string $Date
  *
  * The followings are the available model relations:
  * @property MessagesUser[] $messagesUsers
- * @property Role $idRole
  */
-class User extends CActiveRecord
+class Messages extends CActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return User the static model class
+	 * @return Messages the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -34,7 +30,7 @@ class User extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'user';
+		return 'messages';
 	}
 
 	/**
@@ -45,13 +41,11 @@ class User extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id_role', 'required'),
-			array('id_role', 'numerical', 'integerOnly'=>true),
-			array('UserName, PassWord, FirstName, LastName', 'length', 'max'=>45),
-			array('CreationDate, LastUpdate', 'safe'),
+			array('Content, Subject, sender, Date', 'required'),
+			array('Subject, sender', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, UserName, PassWord, CreationDate, LastUpdate, FirstName, LastName, id_role', 'safe', 'on'=>'search'),
+			array('id, Content, Subject, sender, Date', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -63,8 +57,7 @@ class User extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'messagesUsers' => array(self::HAS_MANY, 'MessagesUser', 'id_user'),
-			'idRole' => array(self::BELONGS_TO, 'Role', 'id_role'),
+			'messagesUsers' => array(self::HAS_MANY, 'MessagesUser', 'id_messages'),
 		);
 	}
 
@@ -75,13 +68,10 @@ class User extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'UserName' => 'User Name',
-			'PassWord' => 'Pass Word',
-			'CreationDate' => 'Creation Date',
-			'LastUpdate' => 'Last Update',
-			'FirstName' => 'First Name',
-			'LastName' => 'Last Name',
-			'id_role' => 'Id Role',
+			'Content' => 'Content',
+			'Subject' => 'Subject',
+			'sender' => 'Sender',
+			'Date' => 'Date',
 		);
 	}
 
@@ -97,13 +87,10 @@ class User extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('UserName',$this->UserName,true);
-		$criteria->compare('PassWord',$this->PassWord,true);
-		$criteria->compare('CreationDate',$this->CreationDate,true);
-		$criteria->compare('LastUpdate',$this->LastUpdate,true);
-		$criteria->compare('FirstName',$this->FirstName,true);
-		$criteria->compare('LastName',$this->LastName,true);
-		$criteria->compare('id_role',$this->id_role);
+		$criteria->compare('Content',$this->Content,true);
+		$criteria->compare('Subject',$this->Subject,true);
+		$criteria->compare('sender',$this->sender,true);
+		$criteria->compare('Date',$this->Date,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
