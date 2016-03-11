@@ -26,6 +26,27 @@ class RoleController extends Controller
 	 */
 	public function accessRules()
 	{
+
+		  $admins = array('1');
+
+        if( Yii::app()->user->getState('role') =="1")
+      {
+
+       
+
+      	$_user = User::model()->findByPk(Yii::app()->user->getState('id_usr'));
+
+
+
+
+           $admins =array($_user->UserName);
+
+           echo("<script>console.log('PHP: ".$_user->UserName."');</script>");
+
+      }
+
+
+
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
 				'actions'=>array('index','view'),
@@ -37,7 +58,7 @@ class RoleController extends Controller
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'users'=> $admins,
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),

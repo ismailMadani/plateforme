@@ -7,6 +7,9 @@
  */
 class UserIdentity extends CUserIdentity
 {
+
+	private $_id;
+
 	/**
 	 * Authenticates a user.
 	 * The example implementation makes sure if the username and password
@@ -18,17 +21,33 @@ class UserIdentity extends CUserIdentity
 	public function authenticate()
 	{
 		
-		$record=User::model()->findByAttributes(array('UserName'=>  $this->username));
-		if($record===NULL){
+	//	$record=User::model()->findByAttributes(array('UserName'=>  $this->username));
+		 $user=User::model()->find('LOWER(UserName)=?',array(strtolower($this->username)) );
+
+		if($user===NULL){
                     $this->errorCode=self::ERROR_USERNAME_INVALID;
                 }
-                else if($record->PassWord!==crypt ($this->password, 'salt')){
+                else if($user->PassWord!==crypt ($this->password, 'salt')){
                     $this->errorCode=self::ERROR_PASSWORD_INVALID;
 
                 }
                 else{
+
+                	 $this->_id = $user->id;
+                  //   $this->username=$user->username;
+
                     $this->errorCode=self::ERROR_NONE;
+
+                    $this->setState('role', $user->id_role);
+                    $this->setState('id_usr', $user->id);
+
                 }
 		return !$this->errorCode;
 	}
+
+	public function getId(){
+
+		return $this->_id;
+	}
+
 }
