@@ -1,29 +1,8 @@
-<?php
-/* @var $this MessagesController */
-/* @var $data Messages */
-?>
-
-<div class="view">
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('id')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->id), array('view', 'id'=>$data->id)); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Content')); ?>:</b>
-	<?php echo CHtml::encode($data->Content); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Subject')); ?>:</b>
-	<?php echo CHtml::encode($data->Subject); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('sender')); ?>:</b>
-	<?php echo CHtml::encode($data->sender); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Date')); ?>:</b>
-	<?php echo CHtml::encode($data->Date); ?>
-	<br />
-
-
-</div>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                          <td class="mailbox-name"><?php echo CHtml::link(CHtml::encode($data->id), array('view', 'id'=>$data->id)); ?></td>
+                          <td class="mailbox-subject"><?php echo  CHtml::link(CHtml::encode($data->Content), array('view', 'id'=>$data->id));?></td>
+                          <td class="mailbox-attachment"><?php echo CHtml::encode($data->Subject); ?></td>
+                          <td class="mailbox-date"><?php echo CHtml::encode($data->Date); ?></td>
+                        </tr>

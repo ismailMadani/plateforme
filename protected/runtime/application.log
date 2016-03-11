@@ -80,3 +80,128 @@ Stack trace:
 #20 {main}
 REQUEST_URI=/plateforme/messages
 ---
+2016/03/11 15:15:58 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\Yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\Yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\Yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('messages/admin')
+#9 C:\wamp\www\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\wamp\www\plateforme\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/plateforme/messages/admin
+HTTP_REFERER=http://localhost/plateforme/messages/index
+---
+2016/03/11 15:27:01 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.username" is not defined.' in C:\wamp\www\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\auth\CWebUser.php(140): CComponent->__get('username')
+#1 C:\wamp\www\plateforme\protected\views\layouts\main.php(71): CWebUser->__get('username')
+#2 C:\wamp\www\Yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\pla...')
+#3 C:\wamp\www\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\pla...', Array, true)
+#4 C:\wamp\www\Yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\wamp\\www\\pla...', Array, true)
+#5 C:\wamp\www\Yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\wamp\www\Yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\wamp\www\Yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 C:\wamp\www\Yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 C:\wamp\www\plateforme\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\wamp\www\Yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\pla...')
+#11 C:\wamp\www\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\pla...', Array, true)
+#12 C:\wamp\www\Yii\framework\web\CController.php(784): CBaseController->renderFile('C:\\wamp\\www\\pla...', Array, true)
+#13 C:\wamp\www\plateforme\protected\controllers\SiteController.php(32): CController->render('index')
+#14 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\wamp\www\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('')
+#19 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#20 C:\wamp\www\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 C:\wamp\www\plateforme\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/plateforme/
+---
+2016/03/11 15:36:25 [error] [php] Undefined variable: model (C:\wamp\www\plateforme\protected\views\messages\index.php:20)
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(869): MessagesController->renderFile()
+#1 C:\wamp\www\Yii\framework\web\CController.php(782): MessagesController->renderPartial()
+#2 C:\wamp\www\plateforme\protected\controllers\MessagesController.php(128): MessagesController->render()
+#3 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): MessagesController->actionIndex()
+#4 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\Yii\framework\web\filters\CFilterChain.php(133): MessagesController->runAction()
+#6 C:\wamp\www\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\www\Yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\wamp\www\Yii\framework\web\filters\CInlineFilter.php(58): MessagesController->filterAccessControl()
+#9 C:\wamp\www\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\wamp\www\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\www\Yii\framework\web\CController.php(265): MessagesController->runActionWithFilters()
+#12 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): MessagesController->run()
+#13 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\wamp\www\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\wamp\www\plateforme\index.php(13): CWebApplication->run()
+REQUEST_URI=/plateforme/Messages
+in C:\wamp\www\plateforme\protected\views\messages\index.php (20)
+in C:\wamp\www\plateforme\protected\controllers\MessagesController.php (128)
+in C:\wamp\www\plateforme\index.php (13)
+2016/03/11 15:37:16 [error] [exception.CException] exception 'CException' with message 'CActiveDataProvider and its behaviors do not have a method or closure named "getValidators".' in C:\wamp\www\Yii\framework\base\CComponent.php:265
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\helpers\CHtml.php(1964): CComponent->__call('getValidators', Array)
+#1 C:\wamp\www\Yii\framework\web\helpers\CHtml.php(1964): CActiveDataProvider->getValidators('id')
+#2 C:\wamp\www\Yii\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(CActiveDataProvider), 'id', Array)
+#3 C:\wamp\www\Yii\framework\zii\widgets\grid\CDataColumn.php(97): CHtml::activeTextField(Object(CActiveDataProvider), 'id', Array)
+#4 C:\wamp\www\Yii\framework\zii\widgets\grid\CGridColumn.php(109): CDataColumn->renderFilterCellContent()
+#5 C:\wamp\www\Yii\framework\zii\widgets\grid\CGridView.php(505): CGridColumn->renderFilterCell()
+#6 C:\wamp\www\Yii\framework\zii\widgets\grid\CGridView.php(483): CGridView->renderFilter()
+#7 C:\wamp\www\Yii\framework\zii\widgets\grid\CGridView.php(453): CGridView->renderTableHeader()
+#8 C:\wamp\www\Yii\framework\zii\widgets\CBaseListView.php(160): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 C:\wamp\www\Yii\framework\zii\widgets\CBaseListView.php(143): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#11 C:\wamp\www\Yii\framework\zii\widgets\CBaseListView.php(128): CBaseListView->renderContent()
+#12 C:\wamp\www\Yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#13 C:\wamp\www\plateforme\protected\views\messages\index.php(33): CBaseController->widget('zii.widgets.gri...', Array)
+#14 C:\wamp\www\Yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\pla...')
+#15 C:\wamp\www\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\pla...', Array, true)
+#16 C:\wamp\www\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\pla...', Array, true)
+#17 C:\wamp\www\Yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#18 C:\wamp\www\plateforme\protected\controllers\MessagesController.php(128): CController->render('index', Array)
+#19 C:\wamp\www\Yii\framework\web\actions\CInlineAction.php(49): MessagesController->actionIndex()
+#20 C:\wamp\www\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 C:\wamp\www\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 C:\wamp\www\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 C:\wamp\www\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 C:\wamp\www\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 C:\wamp\www\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 C:\wamp\www\Yii\framework\web\CController.php(291): CFilterChain->run()
+#27 C:\wamp\www\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('')
+#29 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Messages')
+#30 C:\wamp\www\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#31 C:\wamp\www\plateforme\index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/plateforme/Messages
+---
+2016/03/11 15:55:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "compose.html".' in C:\wamp\www\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(270): CController->missingAction('compose.html')
+#1 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('compose.html')
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('messages/compos...')
+#3 C:\wamp\www\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\plateforme\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/plateforme/messages/compose.html
+HTTP_REFERER=http://localhost/plateforme/messages/index
+---
+2016/03/11 16:31:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "mailbox.html".' in C:\wamp\www\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(270): CController->missingAction('mailbox.html')
+#1 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('mailbox.html')
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('messages/mailbo...')
+#3 C:\wamp\www\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\plateforme\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/plateforme/messages/mailbox.html
+HTTP_REFERER=http://localhost/plateforme/messages/create
+---
