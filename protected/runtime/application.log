@@ -69,3 +69,14 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/plateforme/index.php/login
 ---
+2016/03/11 12:34:45 [error] [php] include(Controller.php): failed to open stream: No such file or directory (C:\wamp\www\Yii\framework\YiiBase.php:421)
+Stack trace:
+#0 C:\wamp\www\plateforme\protected\controllers\SiteController.php(4): spl_autoload_call()
+#1 C:\wamp\www\Yii\framework\web\CWebApplication.php(354): require()
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#3 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\wamp\www\plateforme\index.php(13): CWebApplication->run()
+REQUEST_URI=/plateforme/index.php/site/login
+in C:\wamp\www\plateforme\protected\controllers\SiteController.php (4)
+in C:\wamp\www\plateforme\index.php (13)
