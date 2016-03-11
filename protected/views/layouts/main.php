@@ -109,14 +109,19 @@
                 <i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-                <li><a href="../../index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+                <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/index"><i class="fa fa-circle-o"></i> Dashboard</a></li>
+                
               </ul>
             </li>
             
             <li>
-              <a href="../widgets.html">
-                <i class="fa fa-th"></i> <span>Widgets</span> <small class="label pull-right bg-green">Hot</small>
+              <a href="<?php echo Yii::app()->request->baseUrl; ?>/user">
+                <i class="fa fa-th"></i> Users
+              </a>
+            </li>
+            <li>
+              <a href="<?php echo Yii::app()->request->baseUrl; ?>/role">
+                <i class="fa fa-th"></i> Roles
               </a>
             </li>
             
@@ -155,16 +160,16 @@
         <section class="content">
 <div class="box box-info">
                 <div class="box-header">
-                  <i class="fa fa-envelope"></i>
-                  <h3 class="box-title">Quick Email</h3>
+                 
                   <!-- tools box -->
                   <div class="pull-right box-tools">
-                    <button class="btn bg-teal btn-sm" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                    <button class="btn bg-teal btn-sm" data-widget="remove"><i class="fa fa-times"></i></button>
+                    
                 </div>
                 <div class="box-body">
                   
-<?php echo $content; ?>
+                    
+                    
+                    <?php echo $content; ?>
 
 
 
