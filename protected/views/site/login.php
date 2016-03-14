@@ -1,6 +1,6 @@
    <div class="login-box">
       <div class="login-logo">
-        <a href="../../index2.html"><b>Admin</b>LTE</a>
+        <a href="<?php echo Yii::app()->request->baseUrl; ?>">PlateForme</a>
       </div><!-- /.login-logo -->
       <div class="login-box-body">
         <p class="login-box-msg">Sign in to start your session</p>
@@ -35,7 +35,7 @@
 
           <div class="row">
             <div class="col-xs-8">
-              <div class="checkbox icheck ">
+              <div class="checkbox icheck">
                 <?php echo $form->checkBox($model,'rememberMe' , array('class' =>'icheckbox_square-blue iCheck-helper', 'position'=>'absolute', 'top'=> '-20%', 'left'=> '-20%', 'display'=>'block', 'width'=> '140%', 'height'=>'140%', 'margin'=>'0px', 'padding'=>'0px','border'=>'0px', 'opacity'=>'0', 'background'=>'rgb(255, 255, 255)' )); ?>
                 <?php echo $form->label($model,'rememberMe' ); ?>
                 <?php echo $form->error($model,'rememberMe'); ?>

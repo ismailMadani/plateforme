@@ -114,21 +114,58 @@
               </ul>
             </li>
             
-            <li>
-              <a href="<?php echo Yii::app()->request->baseUrl; ?>/user">
-                <i class="fa fa-th"></i> Users
+            <li class="treeview">
+              <a href="#">
+                  <i class="fa fa-dashboard"></i> <span>Users</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
+              <ul class="treeview-menu">
+                <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/user"><i class="fa fa-circle-o"></i> Users</a></li>
+                
+              </ul>
+                <ul class="treeview-menu">
+                <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/user/create"><i class="fa fa-circle-o"></i> create</a></li>
+                
+              </ul>
+                <ul class="treeview-menu">
+                <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/user/admin"><i class="fa fa-circle-o"></i> manage</a></li>
+                
+              </ul>
             </li>
-            <li>
-              <a href="<?php echo Yii::app()->request->baseUrl; ?>/role">
-                <i class="fa fa-th"></i> Roles
+            <li class="treeview">
+              <a href="#">
+                  <i class="fa fa-dashboard"></i> <span>Roles</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
+              <ul class="treeview-menu">
+                <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/role"><i class="fa fa-circle-o"></i> Roles</a></li>
+                
+              </ul>
+                <ul class="treeview-menu">
+                <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/role/create"><i class="fa fa-circle-o"></i> create</a></li>
+                
+              </ul>
+                <ul class="treeview-menu">
+                <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/role/admin"><i class="fa fa-circle-o"></i> manage</a></li>
+                
+              </ul>
             </li>
-            <li>
-              <a href="<?php echo Yii::app()->request->baseUrl; ?>/Messages">
-                <i class="fa fa-th"></i> Messages
+            <li class="treeview">
+              <a href="#">
+                  <i class="fa fa-dashboard"></i> <span>Messages</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
+              <ul class="treeview-menu">
+                <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/Messages"><i class="fa fa-circle-o"></i> Messages</a></li>
+                
+              </ul>
+                <ul class="treeview-menu">
+                <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/Messages/create"><i class="fa fa-circle-o"></i> create</a></li>
+                
+              </ul>
+                <ul class="treeview-menu">
+                <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/Messages/admin"><i class="fa fa-circle-o"></i> manage</a></li>
+                
+              </ul>
             </li>
+           
             
             
             
@@ -165,11 +202,11 @@
         <section class="content">
                 <div class="row">
                   
-                    
+                    <div class="col-md-12">
                     
                     <?php echo $content; ?>
 
-
+                    </div>
 
 
                 
