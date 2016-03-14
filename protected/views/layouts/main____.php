@@ -62,14 +62,14 @@
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   
-                  <span class="hidden-xs"><?php echo Yii::app()->user->name; ?></span>
+                  <span class="hidden-xs">me</span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
                     <p>
-                      <?php echo Yii::app()->user->name; ?>
-                      <small></small>
+                      Alexander Pierce - Web Developer
+                      <small>Member since Nov. 2012</small>
                     </p>
                   </li>
                   <!-- Menu Body -->
@@ -77,10 +77,10 @@
                   <!-- Menu Footer-->
                   <li class="user-footer">
                     <div class="pull-left">
-                      <a href="<?php echo Yii::app()->request->baseUrl; ?>/site/login" class="btn btn-default btn-flat">Login</a>
+                      <a href="#" class="btn btn-default btn-flat">Profile</a>
                     </div>
                     <div class="pull-right">
-                      <a href="<?php echo Yii::app()->request->baseUrl; ?>/site/logout" class="btn btn-default btn-flat">Logout</a>
+                      <a href="#" class="btn btn-default btn-flat">Sign out</a>
                     </div>
                   </li>
                 </ul>
@@ -124,11 +124,6 @@
                 <i class="fa fa-th"></i> Roles
               </a>
             </li>
-            <li>
-              <a href="<?php echo Yii::app()->request->baseUrl; ?>/Messages">
-                <i class="fa fa-th"></i> Messages
-              </a>
-            </li>
             
             
             
@@ -163,7 +158,14 @@
 
         <!-- Main content -->
         <section class="content">
-                <div class="row">
+<div class="box box-info">
+                <div class="box-header">
+                 
+                  <!-- tools box -->
+                  <div class="pull-right box-tools">
+                    
+                </div>
+                <div class="box-body">
                   
                     
                     
@@ -172,10 +174,12 @@
 
 
 
-                
+                </div>
+               
+              </div>
 
       
-                </div>
+
             
 
 
