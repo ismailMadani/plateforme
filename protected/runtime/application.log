@@ -664,3 +664,166 @@ Stack trace:
 REQUEST_URI=/plateforme/messages/admin
 HTTP_REFERER=http://localhost/plateforme/Messages
 ---
+2016/03/18 13:20:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/pre/Preloader_3.gif".' in C:\wamp\www\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('img/pre/Preload...')
+#1 C:\wamp\www\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\plateforme\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/plateforme/img/pre/Preloader_3.gif
+HTTP_REFERER=http://localhost/plateforme/
+---
+2016/03/18 13:20:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/pre/Preloader_3.gif".' in C:\wamp\www\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('img/pre/Preload...')
+#1 C:\wamp\www\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\plateforme\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/plateforme/img/pre/Preloader_3.gif
+HTTP_REFERER=http://localhost/plateforme/
+---
+2016/03/18 13:20:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logout.php".' in C:\wamp\www\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('logout.php')
+#1 C:\wamp\www\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\plateforme\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/plateforme/logout.php
+HTTP_REFERER=http://localhost/plateforme/
+---
+2016/03/18 13:20:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/pre/Preloader_3.gif".' in C:\wamp\www\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('img/pre/Preload...')
+#1 C:\wamp\www\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\plateforme\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/plateforme/img/pre/Preloader_3.gif
+HTTP_REFERER=http://localhost/plateforme/logout.php
+---
+2016/03/18 13:21:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logout.php".' in C:\wamp\www\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('logout.php')
+#1 C:\wamp\www\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\plateforme\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/plateforme/logout.php
+HTTP_REFERER=http://localhost/plateforme/
+---
+2016/03/18 13:23:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/pre/Preloader_3.gif".' in C:\wamp\www\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('img/pre/Preload...')
+#1 C:\wamp\www\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\plateforme\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/plateforme/img/pre/Preloader_3.gif
+HTTP_REFERER=http://localhost/plateforme/
+---
+2016/03/18 13:23:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/pre/Preloader_3.gif".' in C:\wamp\www\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('img/pre/Preload...')
+#1 C:\wamp\www\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\plateforme\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/plateforme/img/pre/Preloader_3.gif
+HTTP_REFERER=http://localhost/plateforme/user
+---
+2016/03/18 13:23:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/plugins/iCheck/icheck.min.js".' in C:\wamp\www\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/plugins/iCh...')
+#1 C:\wamp\www\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\plateforme\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/plateforme/css/plugins/iCheck/icheck.min.js
+HTTP_REFERER=http://localhost/plateforme/site/login
+---
+2016/03/18 13:23:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\wamp\www\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/pre/Pr...')
+#3 C:\wamp\www\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\plateforme\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/plateforme/site/img/pre/Preloader_3.gif
+HTTP_REFERER=http://localhost/plateforme/site/login
+---
+2016/03/18 15:05:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/plugins/iCheck/icheck.min.js".' in C:\wamp\www\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/plugins/iCh...')
+#1 C:\wamp\www\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\plateforme\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/plateforme/css/plugins/iCheck/icheck.min.js
+HTTP_REFERER=http://localhost/plateforme/site/login
+---
+2016/03/18 15:05:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\wamp\www\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/pre/Pr...')
+#3 C:\wamp\www\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\plateforme\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/plateforme/site/img/pre/Preloader_3.gif
+HTTP_REFERER=http://localhost/plateforme/site/login
+---
+2016/03/18 15:05:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/plugins/iCheck/icheck.min.js".' in C:\wamp\www\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/plugins/iCh...')
+#1 C:\wamp\www\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\plateforme\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/plateforme/css/plugins/iCheck/icheck.min.js
+HTTP_REFERER=http://localhost/plateforme/site/login
+---
+2016/03/18 15:05:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\wamp\www\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/pre/Pr...')
+#3 C:\wamp\www\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\plateforme\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/plateforme/site/img/pre/Preloader_3.gif
+HTTP_REFERER=http://localhost/plateforme/site/login
+---
+2016/03/18 15:05:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/plugins/iCheck/icheck.min.js".' in C:\wamp\www\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/plugins/iCh...')
+#1 C:\wamp\www\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\plateforme\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/plateforme/css/plugins/iCheck/icheck.min.js
+HTTP_REFERER=http://localhost/plateforme/site/login
+---
+2016/03/18 15:05:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\wamp\www\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/pre/Pr...')
+#3 C:\wamp\www\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\plateforme\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/plateforme/site/img/pre/Preloader_3.gif
+HTTP_REFERER=http://localhost/plateforme/site/login
+---
+2016/03/18 15:05:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/plugins/iCheck/icheck.min.js".' in C:\wamp\www\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/plugins/iCh...')
+#1 C:\wamp\www\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\plateforme\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/plateforme/css/plugins/iCheck/icheck.min.js
+HTTP_REFERER=http://localhost/plateforme/site/login
+---
+2016/03/18 15:05:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in C:\wamp\www\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\Yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\wamp\www\Yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\wamp\www\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/pre/Pr...')
+#3 C:\wamp\www\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\plateforme\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/plateforme/site/img/pre/Preloader_3.gif
+HTTP_REFERER=http://localhost/plateforme/site/login
+---
