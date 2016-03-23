@@ -2,6 +2,7 @@
 /* @var $this UserController */
 /* @var $model User */
 /* @var $form CActiveForm */
+
 ?>
 <div class="container">
         <div class="row">
@@ -16,7 +17,13 @@
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'user-register-form',
 	'enableAjaxValidation'=>false,
-)); ?>
+)); 
+if(isset($model->id)){
+    echo 'yaaaay';
+}
+
+
+?>
 
 	
 
@@ -44,7 +51,10 @@
 		<?php echo $form->error($model,'LastName'); ?>
 	</div>
 
-	
+	<div class="form-group">
+		<?php echo $form->hiddenField($model,'id_role',array('type'=>"hidden",'value'=>'1')); ?>
+		<?php echo $form->error($model,'LastName'); ?>
+	</div>
 
 
 	

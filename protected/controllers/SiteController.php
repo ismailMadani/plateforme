@@ -118,16 +118,46 @@ class SiteController extends Controller
         
         public function actionRegister()
 	{
-		$model=new User;
+		/*$model=new User;
                 
-                // if it is ajax validation request
-		if(isset($_POST['ajax']) && $_POST['ajax']==='user-register-form')
+                if(isset($_POST['User']))
 		{
-			echo CActiveForm::validate($model);
-			Yii::app()->end();
+			$model->attributes=$_POST['User'];
+                        $model->PassWord = crypt($model->PassWord, 'salt');
+			if($model->save())
+				$this->redirect(array('register','id'=>$model->id));
 		}
+
+		$this->render('register',array(
+			'model'=>$model,
+		));
                 
+                */
                 
-                $this->render('register',array('model'=>$model));
+
+                    // display the success page if the register form was previously
+                    // submitted successfully
+                    if (Yii::app()->user->hasFlash('register.success'))
+                    {
+                        $this->render('registerSuccess', Yii::app()->user->getFlash('register.success'));
+                        return;
+                    }
+
+                    $model = new User('register');
+                    if (isset($_POST['User']))
+                    {
+                        $model->attributes = $_POST['User'];
+                        if ($model->save())
+                        {
+                            Yii::app()->user->setFlash('register.success', array(
+                                'UserName' => $model->UserName,
+                                'FirstName' => $model->FirstName,
+                            ));
+                            $this->refresh();
+                        }
+                    }
+                    $this->render('register', array('model'=>$model));
+
+
 	}
 }
