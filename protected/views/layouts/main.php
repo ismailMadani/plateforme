@@ -31,7 +31,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/ipdnsbl/index.php"><i class="fa fa-spin fa-cog"></i> <?php echo CHtml::encode(Yii::app()->name); ?> </a>
+                <a class="navbar-brand" href="<?php echo Yii::app()->request->baseUrl; ?>"><i class="fa fa-spin fa-cog"></i> <?php echo CHtml::encode(Yii::app()->name); ?> </a>
             </div>
             <ul class="nav navbar-top-links navbar-right">
                 <li><?php   echo Yii::app()->user->name; 
@@ -42,13 +42,27 @@
                         <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> Profil</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> paramètres</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li><a href="logout.php"><i class="fa fa-sign-out fa-fw"></i> Se déconnecter</a>
-                        </li>
+                        <?php if(Yii::app()->user->isGuest){
+                        ?>
+                            
+                            <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/login"><i class="fa fa-user fa-fw"></i> login</a></li>
+                            <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/register"><i class="fa fa-user fa-fw"></i> register</a></li>
+                                
+                        <?php
+                        }else{
+                           ?> 
+                            <li><a href="#"><i class="fa fa-user fa-fw"></i> Profil</a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-gear fa-fw"></i> paramètres</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/logout"><i class="fa fa-sign-out fa-fw"></i> Se déconnecter</a>
+                            </li>
+                            
+                          <?php  
+                        }
+                        ?>
+                        
                     </ul>
 
                     <!-- /.dropdown-user -->
@@ -59,7 +73,7 @@
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a href="/ipdnsbl/index.php" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="<?php echo Yii::app()->request->baseUrl; ?>" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                        
 
